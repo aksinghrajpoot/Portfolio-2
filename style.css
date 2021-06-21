@@ -38,7 +38,10 @@ header nav a:nth-child(1n+0) { color: #f06292; } header nav a:nth-child(2n+0) { 
 /*techstack ends*/
 /*project-stack starts*/
 .project-stack ul{margin: 0;padding: 0;}
-.project-stack ul li{list-style: none;color: #90a4ae; }
+.project-stack ul li{list-style: none;color: #90a4ae;margin-bottom: 4px;}
+.project-stack ul li::before{counter-increment:section;content:"Section " counter(section) ". "}
+.project-stack ul{counter-reset:section;list-style-type:none}
+.project-stack ul li::before{counter-increment:section;content:counters(section,".") " "}
 .project-stack ul li span{font-weight: 600;}
 .project-stack ul li a{color:#ffeb3b!important;background:#607d8b;font-family:sans-serif!important;padding:0 7px!important}
 /*project-stack ends*/
