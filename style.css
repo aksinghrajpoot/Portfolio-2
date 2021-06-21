@@ -9,7 +9,7 @@ body{margin:0;padding:0;font-family:sans-serif;background:linear-gradient(270deg
 /*custom webkit-scrollbar ends*/
 /*header part starts*/
 header{padding:3rem 0 5rem;text-align:center}
-header .logo-img{margin-bottom: -40px;}
+header .logo-img{margin-bottom: -40px;pointer-events: none;}
 header .title-link{display:inline-block;color:#63ff6a;font-family:sofia,cursive;letter-spacing:1.2px}
 header span.subtitle{color:#78909c;margin-bottom:10px;font-size:13px;font-style:italic}
 header h1{margin-bottom: 2px;}
